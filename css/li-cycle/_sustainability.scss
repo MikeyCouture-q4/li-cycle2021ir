@@ -1,0 +1,254 @@
+/*==================================
+ ---------- SUSTAINABILITY ---------
+==================================*/
+.page--sustainability {
+    .pane--banner {
+        background-image: linear-gradient($light-overlay, $light-overlay), url($host + '/design/banner/sustainability-banner.jpg');
+        .pane_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include layout-medium {
+                display: block;
+                text-align: center;
+            }
+        }
+        .module-page-title {
+            max-width: calc(#{$layout-width} / 2);
+            text-align: left;
+            @include layout-medium {
+                max-width: none;
+                text-align: center;
+            }
+        }
+    }
+}
+.sustainability {
+    &-report {
+        max-width: 250px;
+        .module_link {
+            margin: 10px 0 0 0;
+            position: relative;
+            padding-left: 25px;
+            color: $brand-color;
+        }
+        .q4icons {
+            [href$=".pdf"],
+            [href$=".PDF"] {
+                .q4icons_icon:before {
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                }
+            }
+        }
+        @include layout-medium {
+            max-width: none;
+            text-align: center;
+            margin: 50px auto 0 auto;
+        }
+    }
+    &-values {
+        background-color: $brand-color;
+        color: $light-color;
+        background-image: url($host + '/design/banner/sustainability-values-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        .module_title {
+            color: $light-color;
+        }
+        &_item:not(:first-child) {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(#E2E2E2, 0.5);
+        }
+        &_grid {
+            align-items: center;
+        }
+        &_icon {
+            font-size: 5rem;
+        }
+        &_number {
+            font-size: 3.6rem;
+        }
+        &_slideshow iframe {
+            left: 0;
+            top: 0;
+        }
+        @include layout-legacy {
+            &_slideshow {
+                text-align: center;
+            }
+        }
+        @include layout-medium {
+            &_grid {
+                text-align: center;
+            }
+            &_number {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+    &-commitment {
+        @at-root .pane--content & .module_container--outer {
+            max-width: none;
+            padding: 0;
+        }
+        &_row {
+            display: flex;
+            align-items: center;
+        }
+        &_row--reverse {
+            flex-direction: row-reverse;
+        }
+        &_image {
+            flex: 0 0 auto;
+            img {
+                vertical-align: top;
+            }
+        }
+        &_content {
+            flex: 1 1 auto;
+            padding-left: 8vw;
+            padding-right: 8vw;
+        }
+        @media screen and (min-width: 1201px) {
+            @at-root .pane--content &--social.module {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+        @include layout-large {
+            @at-root .pane--content & .module_container--outer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            &_image {
+                flex: auto;
+                flex-basis: 25%;
+            }
+            &_content {
+                flex: auto;
+                flex-basis: 75%;
+                padding-left: 20px;
+                padding-right: 0;
+            }
+            &_row--reverse .sustainability-commitment_content {
+                padding-left: 0;
+                padding-right: 20px;
+            }
+        }
+        @include layout-legacy {
+            &_image {
+                flex-basis: 33.33%;
+            }
+            &_content {
+                flex-basis: 66.66%;
+            }
+        }
+        @include layout-medium {
+            &_row {
+                display: block;
+            }
+            &_image {
+                padding-bottom: 30px;
+            }
+            &_content {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    &-governance {
+        background-color: $brand-color;
+        color: $light-color;
+        background-image: url($host + '/design/banner/sustainability-commitment-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        .module_title {
+            color: $light-color;
+        }
+    }
+    &-awards {
+        .module_title {
+            word-break: break-word;
+        }
+        .module_container--widget {
+            margin-bottom: 30px;
+            padding: 0;
+        }
+        .slick-list {
+            padding: 0 20px;
+            margin: 0 -20px;
+            width: auto;
+        }
+        .slick-arrow {
+            left: 50%;
+            right: auto;
+            top: auto;
+            bottom: -15px;
+        }
+        .slick-prev {
+            transform: translateX(-100%);
+        }
+        .slick-next {
+            transform: translateX(100%);
+        }
+        &_image {
+            padding: 10px 20px;
+            background: $light-color;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            margin-top: 5px;
+        }
+        &_title {
+            margin-top: 30px;
+        }
+        @include layout-legacy {
+            &_item {
+                margin-bottom: 30px;
+            }
+            &_title {
+                margin-top: 20px;
+            }
+        }
+    }
+    &-news {
+        .module_container--widget {
+            display: flex;
+            justify-content: stretch;
+            align-items: stretch;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .module {
+            &_item {
+                margin: 0;
+                padding: 0 0 0 20px;
+                border: none;
+                display: flex;
+                align-self: stretch;
+                &-wrap {
+                    border-bottom: 1px solid rgba($brand-color, 0.5);
+                    padding-bottom: 40px;
+                    height: 100%;
+                }
+            }
+            &_date-time {
+                color: #585555;
+            }
+        }
+        .slick-arrow {
+            left: 50%;
+            right: auto;
+            top: auto;
+            bottom: 20px;
+        }
+        .slick-prev {
+            transform: translateX(-100%);
+        }
+        .slick-next {
+            transform: translateX(100%);
+        }
+    }
+}

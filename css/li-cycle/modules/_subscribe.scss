@@ -1,0 +1,141 @@
+/*- MailingList Subscribe Module -*/
+.module-subscribe {
+    &_table {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        tbody {
+            width: 100%;
+            display: block;
+        }
+    }
+    &_form {
+        // Markup Space fix
+        font-size: 0;
+        tr {
+            display: inline-block;
+            width: 50%;
+            margin-bottom: 20px;
+            vertical-align: top; // Markup Space Fix
+            font-size: 1.6rem;
+            &:nth-child(even) {
+                padding-left: 10px;
+            }
+            &:nth-child(odd) {
+                padding-right: 10px;
+            } // Specific Inputs
+            &.module-subscribe_notes-text {
+                margin: 0;
+            }
+            &.module-subscribe_notes-text,
+            &.module-subscribe_notes-input {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+            @include layout-medium {
+                width: 100%;
+                &:nth-child(even) {
+                    padding-left: 0;
+                }
+                &:nth-child(odd) {
+                    padding-right: 0;
+                }
+            }
+        }
+        td {
+            display: block;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-size: 1.4rem;
+        }
+    }
+    &_mailing-list {
+        font-size: 1.4rem;
+        line-height: 1.1;
+        tr {
+            &.module-subscribe_list-header {
+                td {
+                    padding-bottom: 15px;
+                }
+            } // Checkbox Table
+            table {
+                td {
+                    padding-bottom: 10px;
+                }
+                tr:last-child td {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    &_unsubscribe {
+        font-size: 1rem;
+        display: none;
+    } // Required Star
+    .module_required {
+        font-size: 1.4rem;
+    }
+}
+/* optional toggle button */
+.module-subscribe .list-toggle-button{
+    transition: 0.3s ease-in-out;
+    background-image: -moz-linear-gradient(90deg, #007FA9 0%, #006080 100%);
+    background-image: -webkit-linear-gradient(90deg, #007FA9 0%, #006080 100%);
+    background-image: -ms-linear-gradient(90deg, #007FA9 0%, #006080 100%);
+    border: 1px solid #006080;
+    outline-color: #006080 !important;
+    vertical-align:top;
+    height:41px;
+    width:40px;
+}
+.module-subscribe .list-toggle-button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-image: -moz-linear-gradient(-90deg, #007FA9 0%, #006080 100%);
+    background-image: -webkit-linear-gradient(-90deg, #007FA9 0%, #006080 100%);
+    background-image: -ms-linear-gradient(-90deg, #007FA9 0%, #006080 100%);
+}
+.module-subscribe .list-toggle-button:before{
+    font-family: "q4-icons";
+    content: "\ec71";
+    color:#ffffff;
+}
+.module-subscribe input.input--list-toggle-after.module_input {
+    display:inline-block;
+    width:calc(100% - 40px);
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+.module-subscribe input.input--list-toggle-before.module_input {
+    display: inline-block;
+    width: calc(100% - 40px);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.module-subscribe .button--list-toggle-after {
+    border-radius: 0 5px 5px 0;
+}
+.module-subscribe .button--list-toggle-before {
+    border-radius: 5px 0 0 5px;
+}
+@media only screen and (max-width: 1120px) and (max-width: 1024px) {
+    .module-subscribe input.input--list-toggle-after.module_input,
+    .module-subscribe input.input--list-toggle-before.module_input {
+        width:81%;
+    }
+}
+@media only screen and (max-width: 280px){
+    .module-subscribe input.input--list-toggle-after.module_input,
+    .module-subscribe input.input--list-toggle-before.module_input {
+        width:100%;
+        border-radius: 25px;
+    }
+    .module-subscribe .button--list-toggle-after,
+    .module-subscribe .button--list-toggle-before {
+        width:100%;
+        border-radius:4px;
+    }
+}
