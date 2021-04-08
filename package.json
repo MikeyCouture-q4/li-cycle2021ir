@@ -11,7 +11,9 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt qunit"
+    "test": "grunt qunit",
+    "build-css": "node-sass --include-path scss css/li-cycle -o dist/css/studioclassic2018na4",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "devDependencies": {
     "grunt": "^1.3.0",
@@ -28,5 +30,8 @@
     "grunt-sassdoc": "^2.0.2",
     "grunt-tape": "^0.1.0",
     "minami": "^1.1.1"
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0"
   }
 }

@@ -1,6 +1,12 @@
 /*==================================
  --------- DEFAULT STYLES ---------
 ==================================*/
+
+@font-face {
+    font-family: 'Visuelt Pro';
+    src: url($host + "/fonts/VisueltPro-Medium.woff2") format("woff2"),
+  }
+
 body {
     overflow-x: hidden;
     color: $body-color;

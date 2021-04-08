@@ -38,6 +38,8 @@
         z-index: 201;
         padding: 75px 0 0 0;
         transition: 0.3s ease-in-out;
+        background-color: $light-color;
+        border-bottom: 1px solid $neutral-grey-color;
         @at-root .js--header-small & {
             padding: 15px 0 0 0;
             background-color: $light-color;
@@ -56,6 +58,7 @@
         .module-logo img {
             vertical-align: top;
             margin-bottom: 15px;
+            max-width: 60%;
         }
         .module,
         .nav {
@@ -106,41 +109,42 @@
         }
     }
     &--banner {
-        background-image: linear-gradient($light-overlay, $light-overlay), url($host+'/design/banner/banner.jpg');
-        background-position: center center;
-        background-size: cover;
+        // background-image: linear-gradient($light-overlay, $light-overlay), url($host+'/design/banner/banner.jpg');
+        // background-position: center center;
+        // background-size: cover;
+        background-color: $light-color;
         padding-top: 150px;
         position: relative;
         transition: padding-top 0.3s ease-in-out;
-        &:before {
-            content: '';
-            background-image: -moz-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(231,249,255) 100%);
-            background-image: -webkit-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(231,249,255) 100%);
-            background-image: -ms-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(231,249,255) 100%);
-            position: absolute;
-            width: 100%;
-            height: 200px;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            @include layout-legacy {
-                height: 100%;
-                background-image: none;
-                background-color: rgba(226, 248, 255, 0.9);
-            }
-        }
-        &:after {
-            content: '';
-            background-image: -moz-linear-gradient( 0deg, rgb(226,248,255) 0%, rgba(255,255,255,0) 100%);
-            background-image: -webkit-linear-gradient( 0deg, rgb(226,248,255) 0%, rgba(255,255,255,0) 100%);
-            background-image: -ms-linear-gradient( 0deg, rgb(226,248,255) 0%, rgba(255,255,255,0) 100%);
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            left: 0;
-            top: 0;
-        }
+        // &:before {
+        //     content: '';
+        //     background-image: -moz-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(231,249,255) 100%);
+        //     background-image: -webkit-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(231,249,255) 100%);
+        //     background-image: -ms-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(231,249,255) 100%);
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 200px;
+        //     z-index: 1;
+        //     left: 0;
+        //     top: 0;
+        //     @include layout-legacy {
+        //         height: 100%;
+        //         background-image: none;
+        //         background-color: rgba(226, 248, 255, 0.9);
+        //     }
+        // }
+        // &:after {
+        //     content: '';
+        //     background-image: -moz-linear-gradient( 0deg, rgb(226,248,255) 0%, rgba(255,255,255,0) 100%);
+        //     background-image: -webkit-linear-gradient( 0deg, rgb(226,248,255) 0%, rgba(255,255,255,0) 100%);
+        //     background-image: -ms-linear-gradient( 0deg, rgb(226,248,255) 0%, rgba(255,255,255,0) 100%);
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        //     z-index: 1;
+        //     left: 0;
+        //     top: 0;
+        // }
         .pane_inner {
             position: relative;
             z-index: 2;
@@ -306,7 +310,7 @@
         a:not(.button) {
             color: $brand-color;
             &:hover {
-                text-decoration: underline;
+                text-decoration: none;
             }
         }
         .module {

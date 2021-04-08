@@ -27,7 +27,7 @@
     &--main {
         text-align: right;
         font-family: $heading-font;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: 500;
         padding-right: 30px;
         button.submenu-trigger { /* removing default button styling for dropdown menu buttons */
@@ -52,28 +52,29 @@
             a:focus,
             button:hover a,
             button:focus a {
-                color: $brand-color;
-                &:after {
-                    content: '';
-                    position: absolute;
-                    bottom: -1px;
-                    left: 0;
-                    width: 100%;
-                    height: 3px;
-                    @extend .background--gradient-horizontal;
-                }
+                opacity: .7;
+                color: $body-color;
+                // &:after {
+                //     content: '';
+                //     position: absolute;
+                //     bottom: -1px;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 3px;
+                //     @extend .background--gradient-horizontal;
+                // }
             }
-            &.expanded:not(.home) > a:after,
-            &.selected .home > a:after,
-            &.selected > a:after {
-                content: '';
-                position: absolute;
-                bottom: -1px;
-                left: 0;
-                width: 100%;
-                height: 3px;
-                @extend .background--gradient-horizontal;
-            }
+            // &.expanded:not(.home) > a:after,
+            // &.selected .home > a:after,
+            // &.selected > a:after {
+            //     content: '';
+            //     position: absolute;
+            //     bottom: -1px;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 3px;
+            //     @extend .background--gradient-horizontal;
+            // }
             &.home {
                 & > a {
                     display: inline-block;
@@ -83,7 +84,7 @@
             }
         }
         .level2 {
-            border-bottom: 1px solid $brand-color--alt;
+            // border-bottom: 1px solid $brand-color--alt;
             display: inline-block;
             vertical-align: top;
             & > li {
