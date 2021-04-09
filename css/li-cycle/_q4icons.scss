@@ -2,6 +2,9 @@
  -------- Q4 Modules Icons ---------
 ==================================*/
 
+.q4icons_icon{
+    color: $blue-color;
+}
 .q4icons {
     .q4icons_icon:before {
         @include icon(e91a);

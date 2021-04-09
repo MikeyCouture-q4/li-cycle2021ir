@@ -22,7 +22,7 @@ body {
 /*---------- TYPOGRAPHY ----------*/
 h1, .h1 {
     font-family: $heading-font;
-    color: $brand-color;
+    color: $body-color;
     font-size: 5rem;
     font-weight: 300;
     margin-bottom: 25px;
@@ -225,23 +225,26 @@ iframe {
     line-height: 0;
 }
 .button {
-    transition: 0.3s ease-in-out;
-    background-image: -moz-linear-gradient( 90deg, #007FA9 0%, #006080 100%);
-    background-image: -webkit-linear-gradient( 90deg, #007FA9 0%, #006080 100%);
-    background-image: -ms-linear-gradient( 90deg, #007FA9 0%, #006080 100%);
-    border: 1px solid $brand-color;
+    transition: 0.2s ease-in-out;
+    // background-image: -moz-linear-gradient( 90deg, #007FA9 0%, #006080 100%);
+    // background-image: -webkit-linear-gradient( 90deg, #007FA9 0%, #006080 100%);
+    // background-image: -ms-linear-gradient( 90deg, #007FA9 0%, #006080 100%);
+    background: #fff;
+    border: 1px solid $blue-color;
     outline-color: $brand-color !important;
-    color: $light-color;
+    color: $blue-color;
     min-width: 152px;
     text-align: center;
-    border-radius: 25px;
-    text-transform: capitalize;
+    border-radius: 0px;
+    text-transform: uppercase;
     &:hover {
         text-decoration: none;
-        color: $light-color;
-        background-image: -moz-linear-gradient( -90deg, #007FA9 0%, #006080 100%);
-        background-image: -webkit-linear-gradient( -90deg, #007FA9 0%, #006080 100%);
-        background-image: -ms-linear-gradient( -90deg, #007FA9 0%, #006080 100%);
+        // color: $light-color;
+        // border: 1px solid $brand-color--altLight;
+        filter: drop-shadow(0px 4px 20px rgba(46,63,171,.3));
+        // background-image: -moz-linear-gradient( -90deg, #BEEFC0 0%, #15CB6B 100%);
+        // background-image: -webkit-linear-gradient( -90deg, #BEEFC0 0%, #15CB6B 100%);
+        // background-image: -ms-linear-gradient( -90deg, #BEEFC0 0%, #15CB6B 100%);
     }
     &--inverted {
         background: $brand-color--alt;
@@ -306,8 +309,19 @@ iframe {
     font-family: $heading-font;
     font-weight: 500;
     color: $body-color;
+    border-radius: 0px;
     &::-ms-expand {
         display: none;
+    }
+}
+
+.module_date-text{
+    color: $blue-color;
+}
+
+.module_link-text {
+    &:hover{
+        opacity: 0.7;
     }
 }
 

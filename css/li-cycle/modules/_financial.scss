@@ -127,7 +127,7 @@
                 display: inline-block;
                 position: relative;
                 z-index: 2;
-                background: #f1f1f1;
+                background: $light-color;
                 text-align: left;
             }
             &.doc:not(:last-child) {
@@ -254,8 +254,8 @@
             width: 100%;
             min-width: auto;
             &.js--selected {
-                background: $brand-color--alt;
-                color: #fff;
+                background: $light-blue;
+                color: $blue-color;
             }
         }
         @media only screen and (min-width: 769px) {
@@ -270,6 +270,16 @@
         }
     }
     &-latest {
+        .corner-accent{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .corner-accent-new{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
         .module_container--inner {
             background-color: rgb(255, 255, 255);
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.06);
@@ -291,6 +301,7 @@
                 &:hover {
                     .module_link-text {
                         color: $brand-color;
+                        opacity: 0.7;
                     }
                 }
             }
@@ -316,7 +327,9 @@
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 297.9 337.5'%3E%3ClinearGradient id='grad1' x1='0' x2='1' gradientTransform='rotate(90)'%3E%3Cstop offset='0%25' stop-color='%23007FA9' /%3E%3Cstop offset='100%25' stop-color='%23006080' /%3E%3C/linearGradient%3E%3Cstyle type='text/css'%3E .st0%7Bfill: url(%23grad1); %3C/style%3E%3Cdefs%3E%3C/defs%3E%3Cpath class='st0' d='M0,94.9v147.6c0,7.5,4,14.5,10.6,18.3l127.8,73.8c6.5,3.8,14.6,3.8,21.1,0l127.8-73.8 c6.5-3.8,10.6-10.7,10.6-18.3V94.9c0-7.5-4-14.5-10.6-18.3L159.5,2.8c-6.5-3.8-14.6-3.8-21.1,0L10.6,76.6C4,80.4,0,87.4,0,94.9z'/%3E%3C/svg%3E");
+                // background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 297.9 337.5'%3E%3ClinearGradient id='grad1' x1='0' x2='1' gradientTransform='rotate(90)'%3E%3Cstop offset='0%25' stop-color='%23007FA9' /%3E%3Cstop offset='100%25' stop-color='%23006080' /%3E%3C/linearGradient%3E%3Cstyle type='text/css'%3E .st0%7Bfill: url(%23grad1); %3C/style%3E%3Cdefs%3E%3C/defs%3E%3Cpath class='st0' d='M0,94.9v147.6c0,7.5,4,14.5,10.6,18.3l127.8,73.8c6.5,3.8,14.6,3.8,21.1,0l127.8-73.8 c6.5-3.8,10.6-10.7,10.6-18.3V94.9c0-7.5-4-14.5-10.6-18.3L159.5,2.8c-6.5-3.8-14.6-3.8-21.1,0L10.6,76.6C4,80.4,0,87.4,0,94.9z'/%3E%3C/svg%3E");
+                background: $blue-color;
+                z-index: 99;
                 background-size: 100%;
                 justify-content: center;
                 align-items: center;

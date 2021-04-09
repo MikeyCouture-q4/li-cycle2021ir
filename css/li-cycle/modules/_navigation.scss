@@ -148,7 +148,7 @@
         }
     } // Navigation Page Nav
     &--secondary {
-        background: $brand-color;
+        background: $light-blue;
         text-align: center;
         font-family: $heading-font;
         font-size: 1.4rem;
@@ -213,7 +213,7 @@
                 display: inline-block;
                 vertical-align: top;
                 a {
-                    color: $light-color;
+                    color: $brand-color;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -223,8 +223,9 @@
                     }
                     &:hover,
                     &:focus {
-                        background-color: $brand-color--alt;
-                        color: $light-color;
+                        // background-color: $brand-color--alt;
+                        color: $blue-color;
+                        opacity: 0.7;
                         @at-root .js--sticky & {
                             background-color: transparent;
                             color: $brand-color;
@@ -233,8 +234,10 @@
                 }
                 &.selected {
                     a {
-                        background-color: $brand-color--alt;
-                        color: $light-color;
+                        // background-color: $brand-color--alt;
+                        color: $blue-color;
+                        border: 1px solid $blue-color;
+                        padding: 14px 25px;
                         @at-root .js--sticky & {
                             background-color: transparent;
                             color: $brand-color;

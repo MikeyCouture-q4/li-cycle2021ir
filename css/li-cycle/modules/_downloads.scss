@@ -18,6 +18,9 @@
         &-link {
             margin: 0 30px 0 0;
             font-size: 1.4rem;
+            &:hover{
+                opacity: 0.7;
+            }
         }
     }
     .q4icons_icon:before {

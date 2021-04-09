@@ -30,9 +30,9 @@
     }
     &_button {
         appearance: none;
-        border: 1px solid $brand-color;
+        border: 1px solid #cacaca;
         color: $brand-color;
-        background-color: $grey-color;
+        background-color: #F5F8FD;
         border-radius: 3px;
         width: 35px;
         height: 35px;
@@ -44,16 +44,16 @@
         cursor: pointer;
         &:not(.js--disabled):hover {
             color: $light-color;
-            background-color: $brand-color;
+            background-color: $blue-color;
         }
         &:not(.js--disabled):focus {
             color: $light-color;
-            background-color: $brand-color;
+            background-color: $blue-color;
             outline-color: $brand-color;
         }
         &.js--active {
             color: $light-color;
-            background-color: $brand-color;
+            background-color: $blue-color;
         }
         &.js--disabled {
             opacity: 0.3;

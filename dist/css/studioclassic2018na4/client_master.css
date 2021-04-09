@@ -1956,12 +1956,12 @@ a.ui-button:active,
 .ui-widget-content.ui-autocomplete {
   max-height: 300px;
   border: none;
-  background: #666870;
+  background: #EEEEEE;
   color: #252733;
   overflow-y: scroll;
   list-style-type: none;
   padding: 0;
-  border: 1px solid #006080;
+  border: 1px solid #252733;
   max-width: 300px; }
   .ui-widget-content.ui-autocomplete .ui-menu-item {
     padding: 0; }
@@ -1970,7 +1970,7 @@ a.ui-button:active,
   .ui-widget-content.ui-autocomplete .ui-state-active {
     margin: 0;
     border: none;
-    background: #006080;
+    background: #252733;
     font-weight: 300;
     color: #ffffff; }
 
@@ -2175,7 +2175,7 @@ a.ui-button:active,
         border-color: transparent;
         color: #999; }
       .daterangepicker .calendar-table td.in-range {
-        background-color: rgba(0, 96, 128, 0.3);
+        background-color: rgba(37, 39, 51, 0.3);
         border-color: transparent;
         color: #252733;
         border-radius: 0; }
@@ -2186,7 +2186,7 @@ a.ui-button:active,
       .daterangepicker .calendar-table td.start-date.end-date {
         border-radius: 4px; }
       .daterangepicker .calendar-table td.active, .daterangepicker .calendar-table td.active:hover {
-        background-color: #006080;
+        background-color: #252733;
         border-color: transparent;
         color: #ffffff; }
       .daterangepicker .calendar-table td.disabled {
@@ -2217,7 +2217,7 @@ a.ui-button:active,
         -moz-osx-font-smoothing: grayscale;
         content: "\edbe";
         vertical-align: top;
-        color: #006080; }
+        color: #252733; }
     .daterangepicker .calendar-table .prev span {
       right: 35px; }
       .daterangepicker .calendar-table .prev span:before {
@@ -2248,7 +2248,7 @@ a.ui-button:active,
       height: 30px;
       vertical-align: top;
       display: inline-block;
-      background-color: #006080;
+      background-color: #252733;
       color: #ffffff;
       min-width: auto; }
       .daterangepicker .drp-buttons .button--cancel {
@@ -2472,7 +2472,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
   cursor: pointer; }
 
 .mejs__overlay-button {
-  background: url("https://licycle2021ipo.s4.q4web.com/files/design/svg/mejs-controls.svg") no-repeat;
+  background: url("../design/svg/mejs-controls.svg") no-repeat;
   background-position: 0 -39px;
   height: 80px;
   width: 80px; }
@@ -2487,7 +2487,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
 .mejs__overlay-loading-bg-img {
   -webkit-animation: mejs__loading-spinner 1s linear infinite;
   animation: mejs__loading-spinner 1s linear infinite;
-  background: transparent url("https://licycle2021ipo.s4.q4web.com/files/design/svg/mejs-controls.svg") -160px -40px no-repeat;
+  background: transparent url("../design/svg/mejs-controls.svg") -160px -40px no-repeat;
   display: block;
   height: 80px;
   width: 80px;
@@ -2535,7 +2535,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
   width: 32px; }
 
 .mejs__button > button {
-  background: transparent url("https://licycle2021ipo.s4.q4web.com/files/design/svg/mejs-controls.svg");
+  background: transparent url("../design/svg/mejs-controls.svg");
   border: 0;
   cursor: pointer;
   display: block;
